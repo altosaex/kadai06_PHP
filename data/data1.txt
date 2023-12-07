@@ -1,0 +1,3 @@
+<div id="box"><p class="puname"></p><p class="ptitle"></p><p class="ptext"></p></p><span class="remove"><img src="./img/remove.png" height=25" width="25" alt="削除画像" align="top" ></span><span class="update"> <img src="./img/up.png" height=25" width="25" alt="削除画像" align="top" ></span>　2023-12-07 21:02:27
+</div><div id="box"><p class="puname"></p><p class="ptitle"></p><p class="ptext"></p></p><span class="remove"><img src="./img/remove.png" height=25" width="25" alt="削除画像" align="top" ></span><span class="update"> <img src="./img/up.png" height=25" width="25" alt="削除画像" align="top" ></span>　2023-12-07 21:02:34
+</div>
