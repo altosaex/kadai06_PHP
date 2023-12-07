@@ -13,7 +13,8 @@ $question2 = '<p class="ptitle">' . $question . '</p>';
 
 $answer = isset($_POST["answer"]) ? htmlspecialchars($_POST["answer"], ENT_QUOTES, 'UTF-8') : '';
 
-$answer2 = '<p class="ptext">' . $answer . '</p></p><span class="remove"><img src="./img/remove.png" height=25" width="25" alt="削除画像" align="top" ></span><span class="update"> <img src="./img/up.png" height=25" width="25" alt="削除画像" align="top" ></span>　';
+$answer2 = '<p class="ptext">' . $answer . '</p><p class="like-button"><img src="good.png" height=20" width="20" alt="いいね" class="like-icon"><span class="like-count"> 0</span>
+</p><br>';
 
 $time =date('Y-m-d H:i:s') . "\n" . '</div>';
 file_put_contents('data/data3.txt',$name2 . $question2 . $answer2 . $time , FILE_APPEND);
@@ -44,10 +45,11 @@ file_put_contents('data/data4.txt',$name2 . $question2 . $answer2 . $time , FILE
 		</section>
 
 		<div class="linkbtn">
-		<button class="top" onclick="window.open('./index.php')">TOPへ</button>
-		<button class="kanon" onclick="window.open('./user01.php')">カノンの部屋へ</button>
-		<button class="mama" onclick="window.open('./user02.php')">ママの部屋へ</button>
-		</div>
+		<td><button class="top" onclick="window.open('./index.php')">TOPへ</button></td>
+		<td><button class="mama" onclick="window.open('./user01.php')">カノンの部屋へ</button></td>
+		<td><button class="mama" onclick="window.open('./user02.php')">ママの部屋へ</button></td>
+		<td><button class="kanon" onclick="window.open('./user04.php')">みんなの投稿へ</button></td>
+	</div>
 		
 		<form action="user03.php" action="user04.php" method="POST">
 		<div class="input-area">
@@ -84,6 +86,16 @@ echo nl2br($data);
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	
+	<script type="module">
+  // いいねボタンのクリックイベントリスナー
+        $('#output, #more-content').on('click', '.like-button', function () {
+            const $count = $(this).find('.like-count');
+            let likes = parseInt($count.text());
+            likes++; // カウントを1増やす
+            $count.text(likes);
+        });
+    </script>
+
 	<script type="text/javascript">
 
 function ranAry() {
