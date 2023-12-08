@@ -302,3 +302,12 @@ display: flex;
 justify-content:flex-start
 
 }
+
+	.like-icon {
+		transition: transform 0.1s ease;
+	}
+	
+	.like-icon:hover {
+		transform: scale(1.1);
+	}
+	
