@@ -373,3 +373,12 @@ height: 40px;
 
 	}
 
+	.like-icon {
+		transition: transform 0.1s ease;
+	}
+	
+	.like-icon:hover {
+		transform: scale(1.1);
+	}
+	
+
