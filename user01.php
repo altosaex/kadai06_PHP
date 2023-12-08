@@ -13,7 +13,7 @@ $question2 = '<p class="ptitle">' . $question . '</p>';
 
 $answer = isset($_POST["answer"]) ? htmlspecialchars($_POST["answer"], ENT_QUOTES, 'UTF-8') : '';
 
-$answer2 = '<p class="ptext">' . $answer . '</p><p class="like-button"><img src="good.png" height=20" width="20" alt="いいね" class="like-icon"><span class="like-count"> 0</span>
+$answer2 = '<p class="ptext">' . $answer . '</p><p class="like-button"><img src="good2.png" height=25" width="25" alt="いいね" class="like-icon"> <span class="like-count"> 0</span>
 </p><br>';
 
 $time =date('Y-m-d H:i:s') . "\n" . '</div>';
